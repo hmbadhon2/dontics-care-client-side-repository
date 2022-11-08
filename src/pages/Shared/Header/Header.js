@@ -13,7 +13,7 @@ const Header = () => {
     </>
 
     return (
-        <div className="navbar py-4 text-sky-50 bg-sky-900">
+        <div className="navbar py-4 text-sky-900 font-semibold font-lg bg-sky-50">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
