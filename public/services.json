@@ -1,0 +1,57 @@
+[
+    {
+        
+        "service_id": "01",
+        "title": "General Dentistry",
+        "img": "https://ibb.co/ynTBsJS",
+        "price": "100.00",
+        "description": "General dentists look after the overall health of our teeth and oral hygiene. They offer restorative dentistry including dental bridges, implants, onlays, inlays, bonding, and dentures. They also provide tooth decay treatments (like the filling of cavities), as well as dental exams, X-rays, teeth cleanings, along with simple tooth extractions, and fluoride treatments."
+       
+    },
+    {
+        
+        "service_id": "02",
+        "title": "Cosmetic Dentistry",
+        "img": "https://ibb.co/LRgkgTC",
+        "price": "300.00",
+        "description":"Cosmetic dentistry procedures improve your smile and self-confidence through teeth whitening or teeth bleaching. The latter reduces stains and  give you a brighter smile.Other common cosmetic dentistry procedures are crowns, implants, tooth bonding, and teeth shaping. Another popular option you can get at many cosmetic dental offices in Brampton are dental veneers. These shells of thin cement are put onto the front of your teeth to improve their appearance."
+       
+    },
+    {
+        
+        "service_id": "03",
+        "title": "Periodontal Dentistry",
+        "img": "https://ibb.co/R31mLRD",
+        "price": "200.00",
+        "description":"This form of dentistry prevents and treats conditions and diseases that affect the structures that support our teeth. These include our gums, the cementum (surface layer of the tooth root), periodontal ligament, and alveolar bone.They also treat gum diseases and offer surgeries like pocket reduction and gum grafting. You will require the services of a periodontal dentist in cases of severe gum disease, or if you have a medical history of minor but complicated gum disease."
+       
+    },
+    {
+        
+        "service_id": "04",
+        "title": "Orthodontic Dentistry",
+        "img": "https://ibb.co/qBrGr8N",
+        "price": "200.00",
+        "description":"Dentists who deal in orthodontic dentistry help us align our teeth and jaws in cases of misaligned teeth, underbites, crossbites, or overbites. They correct these issues using palate expanders, braces, retainers, fixed-space maintainers, clear aligners, headgear, and other specialized treatments. These services improve the alignment of our teeth and bite over time."
+       
+    },
+    {
+        
+        "service_id": "05",
+        "title": "Pediatric Dentistry",
+        "img": "https://ibb.co/rMf2Kjb",
+        "price": "500.00",
+        "description":"Pediatric surgeons cater to the dental (and emotional) needs and oral health of children, ranging from infants to teens. Routine services include teeth cleaning and cavity filling, as well as monitoring the development of their teeth. They also track and diagnose oral conditions related to childhood diseases and conditions."
+       
+    },
+    {
+        
+        "service_id": "06",
+        "title": "Endodontic Dentistry",
+        "img": "https://ibb.co/LRgkgTC",
+        "price": "600.00",
+        "description":"The words ‘root canal’ give many of us nightmares. Well, no more. When you’re looking for a dentist in Brampton for root canal therapy, you need an endodontist. Endodontic dentistry deals with the sensitive interior of your tooth when it is damaged, infected, or diseased. Treatments include root canal."
+       
+    }
+   
+]
