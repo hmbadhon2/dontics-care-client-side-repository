@@ -3,12 +3,15 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import {  FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import useTitle from '../../../hook/useTitle';
 
 
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
 const Login = () => {
+
+    useTitle('Login')
 
     const{login, googleSignIn, gitHubSignIn} = useContext(AuthContext)
 
