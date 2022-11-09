@@ -1,9 +1,5 @@
-# Getting Started with Create React App
 
-This project was tailwind css with [Create React App](https://github.com/facebook/create-react-app).
-
-
-# Website Name: Code Script
+# Website Name: Dontics Care
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,4 +25,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ### Deployment
-
+           * Firebase (client-side)
+           * Versel (server-side)
