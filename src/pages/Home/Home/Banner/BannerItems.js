@@ -6,7 +6,7 @@ const BannerItems = ({slider}) => {
     const {id,image,pre,next} = slider;
 
     return (
-        <div id={`slide${id}`} className="carousel-item relative  w-full">
+        <div id={`slide${id}`} className="carousel-item relative mx-auto w-full">
     <div className='carousel-img'>
     <img src={image} alt='' className="w-full" />
     </div>
