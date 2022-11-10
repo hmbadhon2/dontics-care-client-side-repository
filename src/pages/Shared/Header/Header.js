@@ -14,7 +14,7 @@ const Header = () => {
 
     const menuItems = <>
     <li><Link to='/'>Home</Link></li>
-    <li><Link to='/servicesDetails'>Services</Link></li>
+    <li><Link to='/service'>Services</Link></li>
     <li><Link to='/blog'>Blog</Link></li>
     {
       user?.email?
@@ -24,7 +24,11 @@ const Header = () => {
        <li><Link to='/'><button onClick={handleLogOut}> Log Out</button></Link></li>
         </>
        :
-       <li> <Link to='/login'> Login </Link> </li> 
+       <>
+        <li> <Link to='/login'> Login </Link> </li> 
+        <li> <Link to='/register'> Sign Up </Link> </li>
+       </>
+        
       
     }
     
@@ -41,7 +45,7 @@ const Header = () => {
         {menuItems}
       </ul>
     </div>
-    <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+    <Link className="btn btn-ghost normal-case text-xl">DONTICS CARE</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

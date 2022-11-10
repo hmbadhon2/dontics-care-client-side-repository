@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import Main from "../../layout/Main";
 import AddService from "../../pages/AddService/AddService";
 import Blog from "../../pages/Blog/Blog";
-import Checkout from "../../pages/Checkout/Checkout";
 import Home from "../../pages/Home/Home/Home";
 import Services from "../../pages/Home/Home/Services/Services";
 import Login from "../../pages/Login/Login/Login";
@@ -31,32 +29,29 @@ const router = createBrowserRouter([
          element:<Register></Register>
         },
         {path:'/review',
-         element:<MyReview></MyReview>
+         element:<PriveteRoutes><MyReview></MyReview></PriveteRoutes>,
+         loader: () =>fetch('https://y-opal-theta.vercel.app/review')
         },
         {path:'/blog',
          element:<Blog></Blog>
         },
         {path:'/addService',
          element:<AddService></AddService>,
-         loader: ()=>fetch('http://localhost:5000/services')
+         loader: ()=>fetch('https://y-opal-theta.vercel.app/services')
         },
-        {path:'/',
-         element:<PriveteRoutes><Checkout></Checkout></PriveteRoutes>,
-         
-        },
-        {path:'/servicesDetails',
+        {path:'/service',
          element:<ServiceDetails></ServiceDetails>,
-         loader: ()=>fetch('http://localhost:5000/services')
+         loader: ()=>fetch('https://y-opal-theta.vercel.app/services')
         },
         {path:'/service/:id',
          element:<PerServiceDetails></PerServiceDetails>,
-         loader: ({params})=>fetch(`http://localhost:5000/service/${params.id}`)
+         loader: ({params})=>fetch(`https://y-opal-theta.vercel.app/service/${params.id}`)
 
         },
 
-        {path:'/service',
+        {path:'/',
          element:<Services></Services>,
-         loader:() => fetch('http://localhost:5000/servicesThree')
+         loader:() => fetch('https://y-opal-theta.vercel.app/servicesThree')
         },
     ]
     }

@@ -15,7 +15,7 @@ const About = () => {
                 prosthodontology skills.
             </p>
             <button className="btn btn-outline mr-5">More Info</button>
-            <button className="btn bg-sky-900">Book Online</button>
+            <button className="btn bg-sky-600">Book Online</button>
           </div>
 
             {/* image part */}

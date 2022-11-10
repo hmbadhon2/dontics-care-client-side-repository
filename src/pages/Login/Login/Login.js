@@ -2,7 +2,7 @@ import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import {  FaGithub, FaGoogle } from 'react-icons/fa';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Link,useLocation, useNavigate } from 'react-router-dom';
 import useTitle from '../../../hook/useTitle';
 
 
@@ -28,8 +28,26 @@ const handleLogin = e =>{
     login(email,password)
     .then(res =>{
         const user = res.user;
+        const currentUser = {
+          user:user.email
+        }
+
+        fetch('https://y-opal-theta.vercel.app/jwt',{
+          method:'POST',
+          headers:{
+            'content-type':'application/json'
+          },
+          body:JSON.stringify(currentUser)
+        })
+        .then(res =>res.json())
+        .then(data =>{
+          localStorage.setItem('donticsToken',data.token)
+          navigate(from,{replace:true})
+          console.log(data)
+        })
+
         console.log(user)
-        navigate(from,{replace:true})
+        
     })
     .catch(err => console.error(err))
 

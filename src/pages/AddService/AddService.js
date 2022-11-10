@@ -18,7 +18,7 @@ const AddService = () => {
         }
 
 
-        fetch('http://localhost:5000/services',{
+        fetch('https://y-opal-theta.vercel.app/services',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -37,7 +37,6 @@ const AddService = () => {
         .catch(err => console.error(err))
 
     }
-
     return (
         <div className='max-w-5xl mx-auto py-20'>
              <form onSubmit={handleAddService}>

@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
   const [services, setServices] = useState([])
  useEffect(()=>{
-    fetch('http://localhost:5000/servicesThree')
+    fetch('https://y-opal-theta.vercel.app/servicesThree')
     .then(res => res.json())
     .then(data=> setServices(data))
  },[])
 
     return (
         <div>
-            <div className='text-center'>
-                <p className="text-2xl font-bold text-orange-600"> Service</p>
-                <h2 className='text-5xl font-bold'> Our Service Area</h2>
+            <div className='text-center pt-12'>
+                <p className="text-2xl font-bold text-sky-600"> Service</p>
+                <h2 className='text-5xl font-bold'>Provide Services </h2>
                 <div className='py-5' >
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised </p>
                 <p> words which don't look even slightly believable. 
@@ -31,7 +31,11 @@ const Services = () => {
                 
             
             <div className='my-6 text-center'>
-            <button className="btn  bg-sky-600 border-none"> All Services</button>
+           <Link to='/service'>
+                 <button className="btn  bg-sky-600 border-none"> All Services
+                </button>
+           </Link>     
+           
 
             </div>
             </div>
